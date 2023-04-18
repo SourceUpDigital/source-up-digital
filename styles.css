@@ -138,11 +138,12 @@ ul {
 
 .item {
     position: relative;
-}
-
-.item:not(:last-child){
     margin-bottom: 2.75rem;
 }
+
+/* .item:not(:last-child){
+    margin-bottom: 2.75rem;
+} */
 
 .item img {
     width: 100%;
