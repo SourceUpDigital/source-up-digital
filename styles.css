@@ -16,6 +16,10 @@ ul {
     padding: 0;
 }
 
+p {
+    margin: 0;
+}
+
 .navbar {
     background: white;
 }
@@ -138,12 +142,12 @@ ul {
 
 .item {
     position: relative;
-    margin-bottom: 2.75rem;
+    /* margin-bottom: 2.75rem; */
 }
 
-/* .item:not(:last-child){
+.item:not(:last-child){
     margin-bottom: 2.75rem;
-} */
+}
 
 .item img {
     width: 100%;
