@@ -13,7 +13,7 @@
 body {
     margin: 0;
     font-family: "Poppins", sans-serif !important;
-    color: #333;
+    color: #1e1e1e;
 }
 
 a {
@@ -36,38 +36,36 @@ p {
 
 
 .hero_background {
-    background:url("assets/Hero-background.png");
-    height: 560px;
-    width: 100%;
-    line-height: 200%;
-    background-size: cover;
+    background: url("assets/Hero-background.png");
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: contain;
+    height: 90vh;
+    width: 100vw;
+    line-height: 200%;
     position: relative;
 }
 
 .hero_description{
-    margin-top: 250px;
-
+    margin-top: 200px;
+    color: #1e1e1e !important;
 }
 
+.highlighter {
+    position: relative;
+}
 
-
-
-
-.highlighter01 {
-    z-index: -1;
+.highlighter::before{
+    content: "";
     position: absolute;
-    left: 650px;
-    margin-top: 25px;
-    padding-left: 160px;
-    background-color: #E79A4E;
-    color: #E79A4E;
-    height: 30px;
-
-
-
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 105%;
+    height: 50%;
+    background-color: var(--primary-color);
+    z-index: -1;
 }
-
 
 .hero_button{
     background-color: #E79A4E;
@@ -84,6 +82,13 @@ p {
     background-color: #ffffff;
     color: #313131;
     border: 2px solid  #E79A4E;
+}
+
+.arrow-icon {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 
