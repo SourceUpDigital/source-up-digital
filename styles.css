@@ -47,27 +47,23 @@ p {
 
 .hero_description{
     margin-top: 250px;
-
 }
 
+.highlighter {
+    position: relative;
+}
 
-
-
-
-.highlighter01 {
-    z-index: -1;
+.highlighter::before{
+    content: "";
     position: absolute;
-    left: 650px;
-    margin-top: 25px;
-    padding-left: 160px;
-    background-color: #E79A4E;
-    color: #E79A4E;
-    height: 30px;
-
-
-
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 105%;
+    height: 50%;
+    background-color: var(--primary-color);
+    z-index: -1;
 }
-
 
 .hero_button{
     background-color: #E79A4E;
