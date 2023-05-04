@@ -2,6 +2,7 @@
 
 :root {
     --primary-color: #E79A4E;
+    --complementary-color: #41549B;
     --grayish-color: #6a7c92;
 }
 
@@ -52,6 +53,7 @@ p {
     width: 100vw;
     line-height: 200%;
     position: relative;
+    z-index: -1;
 }
 
 .hero_description{
@@ -148,6 +150,7 @@ p {
 
 .services-wrapper {
     position: relative;
+    margin-bottom: 6rem;
 }
 
 .services-wrapper::after {
@@ -159,7 +162,7 @@ p {
     z-index: -1;
     width: 3px;
     background: #E79A4E;
-    height: 100%;
+    height: 120%;
 }
 
 .item {
@@ -195,6 +198,82 @@ p {
     width: 100%;
     background: #E79A4E;
     z-index: -1;
+}
+
+/* 
+
+------- CONSULTATION ------
+
+*/
+.consultation {
+    background-image: url('./assets/consultation_bg.png');
+    padding-block: 5rem;
+    border-radius: 2.75rem;
+}
+
+.consultation-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.consultation-wrapper > * {
+    flex: 1;
+}
+
+.consultation-text {
+    color: white;
+}
+
+.consultation-text h2 {
+    /* text-transform: capitalize !important; */
+    margin-bottom: 1.75rem;
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.consultation-text span {
+    position: relative;
+    text-transform: uppercase;
+    z-index: 2;
+    /* text-shadow: 5px 5px 0px #41549b38; */
+}
+
+/* .consultation-text span::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 101%;
+    height: 50%;
+    background-color: var(--complementary-color);
+    z-index: -1;
+} */
+
+.consultation-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.consultation-logo img {
+    width: 190px;
+    height: 190px;
+    aspect-ratio: 1;
+}
+
+.consultation-logo button {
+    background-color: var(--complementary-color);
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    padding: 1rem 1.5rem;
 }
 
 /* 
@@ -275,6 +354,12 @@ footer h4 {
 
 
 @media screen and (min-width: 640px) {
+    /* CONSULTATION */
+    .consultation-wrapper{
+        flex-direction: row;
+    }
+
+    /* FOOTER */
     .footer-content {
         flex-direction: row;
     }
