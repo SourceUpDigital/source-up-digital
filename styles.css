@@ -2,6 +2,7 @@
 
 :root {
     --primary-color: #E79A4E;
+    --complementary-color: #41549B;
     --grayish-color: #6a7c92;
 }
 
@@ -34,16 +35,25 @@ p {
     background: white;
 }
 
+.navbar ul li {
+    font-weight: 600;
+}
+
+.navbar ul li a:hover {
+    color: var(--primary-color) !important;
+}
+
 
 .hero_background {
     background: url("assets/Hero-background.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
-    height: 90vh;
+    background-size: cover;
+    min-height: 90vh;
     width: 100vw;
     line-height: 200%;
     position: relative;
+    z-index: 1;
 }
 
 .hero_description{
@@ -67,18 +77,19 @@ p {
     z-index: -1;
 }
 
-.hero_button{
+.hero_button, .about-us-wrapper button {
+    border: 2px solid var(--primary-color);
     background-color: #E79A4E;
+    text-transform: uppercase;
     color: white;
-  
     width: 150px;
-    height: 40px; 
- 
-
+    height: 40px;
     border-radius: 10px;
+    margin-bottom: 5rem;
+    transition: background-color .2s ease-out;
 }
 
-.hero_button:hover{
+.hero_button:hover, .about-us-wrapper button:hover{
     background-color: #ffffff;
     color: #313131;
     border: 2px solid  #E79A4E;
@@ -141,6 +152,7 @@ p {
 
 .services-wrapper {
     position: relative;
+    margin-bottom: 6rem;
 }
 
 .services-wrapper::after {
@@ -152,7 +164,7 @@ p {
     z-index: -1;
     width: 3px;
     background: #E79A4E;
-    height: 100%;
+    height: 120%;
 }
 
 .item {
@@ -189,6 +201,166 @@ p {
     background: #E79A4E;
     z-index: -1;
 }
+
+/* 
+
+------- CONSULTATION ------
+
+*/
+.consultation {
+    background-image: url('./assets/consultation_bg.png');
+    padding-block: 5rem;
+    border-radius: 2.75rem;
+}
+
+.consultation-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.consultation-wrapper > * {
+    flex: 1;
+}
+
+.consultation-text {
+    color: white;
+}
+
+.consultation-text h2 {
+    /* text-transform: capitalize !important; */
+    margin-bottom: 1.75rem;
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.consultation-text span {
+    position: relative;
+    text-transform: uppercase;
+    z-index: 2;
+    /* text-shadow: 5px 5px 0px #41549b38; */
+}
+
+/* .consultation-text span::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 101%;
+    height: 50%;
+    background-color: var(--complementary-color);
+    z-index: -1;
+} */
+
+.consultation-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.consultation-logo img {
+    width: 190px;
+    height: 190px;
+    aspect-ratio: 1;
+}
+
+.consultation-logo button {
+    background-color: var(--complementary-color);
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    padding: 1rem 1.5rem;
+}
+
+/* 
+
+    ---- ABOUT US ----
+
+*/
+
+.about {
+    background-image: url('./assets/about_us_bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.about-us-wrapper {
+    width: 100%;
+    min-height: 85vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-us-wrapper p {
+    text-align: center;
+    max-width: 600px;
+}
+
+
+/* 
+
+    ---- BLOG POST ---
+
+*/
+.blogpost {
+    background-color: var(--complementary-color);
+    color: white;
+    border-radius: 2.75rem;
+    padding-bottom: 5rem;
+}
+
+.blogpost-wrapper h2{
+    text-align: center;
+    padding-block: 3.75rem;
+}
+
+.blogpost-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    gap: 2rem;
+
+}
+
+.blogpost-cards__item {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    aspect-ratio: 1;
+    border-radius: 1rem;
+    background-color: var(--primary-color);
+}
+
+.blogpost-cards__item-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1rem 2rem;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-direction: column;
+}
+
+.blogpost-cards__item-description a {
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
 
 /* 
 
@@ -268,6 +440,18 @@ footer h4 {
 
 
 @media screen and (min-width: 640px) {
+    /* CONSULTATION */
+    .consultation-wrapper{
+        flex-direction: row;
+    }
+
+    /* BLOGPOST */
+    .blogpost-cards {
+    flex-direction: row;
+
+    }
+
+    /* FOOTER */
     .footer-content {
         flex-direction: row;
     }
