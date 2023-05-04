@@ -13,7 +13,7 @@
 body {
     margin: 0;
     font-family: "Poppins", sans-serif !important;
-    color: #333;
+    color: #1e1e1e;
 }
 
 a {
@@ -47,6 +47,8 @@ p {
 
 .hero_description{
     margin-top: 250px;
+    color: #1e1e1e !important;
+
 }
 
 .highlighter {
