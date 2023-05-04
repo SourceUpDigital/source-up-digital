@@ -309,6 +309,61 @@ p {
 
 /* 
 
+    ---- BLOG POST ---
+
+*/
+.blogpost {
+    background-color: var(--complementary-color);
+    color: white;
+    border-radius: 2.75rem;
+    padding-bottom: 5rem;
+}
+
+.blogpost-wrapper h2{
+    text-align: center;
+    padding-block: 3.75rem;
+}
+
+.blogpost-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    gap: 2rem;
+
+}
+
+.blogpost-cards__item {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    aspect-ratio: 1;
+    border-radius: 1rem;
+    background-color: var(--primary-color);
+}
+
+.blogpost-cards__item-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1rem 2rem;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-direction: column;
+}
+
+.blogpost-cards__item-description a {
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+
+/* 
+
 ----- FOOTER -----
 
 */
@@ -388,6 +443,12 @@ footer h4 {
     /* CONSULTATION */
     .consultation-wrapper{
         flex-direction: row;
+    }
+
+    /* BLOGPOST */
+    .blogpost-cards {
+    flex-direction: row;
+
     }
 
     /* FOOTER */
