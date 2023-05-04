@@ -237,6 +237,8 @@ footer h4 {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .footer-socials p {
@@ -267,6 +269,11 @@ footer h4 {
 
     .footer-content > * {
         flex: 1;
+    }
+
+    .footer-socials {
+        flex-direction: row;
+
     }
 }
 
