@@ -34,6 +34,14 @@ p {
     background: white;
 }
 
+.navbar ul li {
+    font-weight: 600;
+}
+
+.navbar ul li a:hover {
+    color: var(--primary-color) !important;
+}
+
 
 .hero_background {
     background: url("assets/Hero-background.png");
