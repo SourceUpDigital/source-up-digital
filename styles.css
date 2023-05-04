@@ -36,19 +36,19 @@ p {
 
 
 .hero_background {
-    background:url("assets/Hero-background.png");
-    height: 560px;
-    width: 100%;
-    line-height: 200%;
-    background-size: cover;
+    background: url("assets/Hero-background.png");
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: contain;
+    height: 90vh;
+    width: 100vw;
+    line-height: 200%;
     position: relative;
 }
 
 .hero_description{
-    margin-top: 250px;
+    margin-top: 200px;
     color: #1e1e1e !important;
-
 }
 
 .highlighter {
@@ -82,6 +82,13 @@ p {
     background-color: #ffffff;
     color: #313131;
     border: 2px solid  #E79A4E;
+}
+
+.arrow-icon {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 
