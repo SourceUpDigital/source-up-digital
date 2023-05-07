@@ -1,0 +1,270 @@
+.header {
+  background-color: #f2f2f2;
+  min-height: 60vh;
+
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+}
+
+.header__wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__wrapper h1 {
+  padding-bottom: 1rem;
+  align-self: flex-end;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.header__wrapper img {
+  width: min(100%, 550px);
+  position: absolute;
+  top: 0;
+  right: -2rem;
+  transform: translateY(-110%);
+}
+
+.why-choose-us-section {
+  position: relative;
+  padding-top: 5rem;
+}
+
+.why-choose-us-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30%;
+  height: 100%;
+  background-color: var(--primary-color);
+  z-index: -1;
+}
+
+.why-choose-us-section > img {
+  width: min(100%, 660px);
+  position: absolute;
+  top: 18%;
+  right: 0;
+  z-index: 1;
+}
+
+
+.why-choose-us__reasons {
+  max-width: 670px;
+}
+
+.why-choose-us__reasons span {
+  font-size: .8em;
+  font-weight: 500;
+  color: var(--complementary-color);
+}
+
+.why-choose-us__reasons h2 {
+  font-weight: 600;
+  margin-bottom: 1.75rem;
+}
+
+.why-choose-us__reasons-items {
+  margin-top: 20rem;
+}
+
+.why-choose-us__reasons-items h4 {
+  font-weight: 600;
+}
+
+.reasons-item {
+  background-color: #FBFBFB;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: .5rem;
+  margin-top: 2.75rem;
+}
+
+.reasons-item > *:last-child {
+  padding-top: 1rem;
+}
+
+.reasons-item__text h5 {
+  font-weight: 600;
+}
+
+
+/* 
+
+  ----- TEAM SECTION ------ 
+
+*/
+.team-section {
+  margin-block: 5rem;
+}
+
+.team-section .container > h5 {
+  text-align: center;
+  color: var(--complementary-color);
+}
+
+.our-team h2{
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 3.75rem;
+}
+
+.our-team__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 3.5rem;
+}
+
+.our-team__item > img {
+  width: 180px;
+  height: 180px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+}
+
+.our-team__item h5 {
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.our-team__item p {
+  text-align: center;
+  color: var(--grayish-color);
+}
+
+
+/* 
+
+------- CONSULTATION ------
+
+*/
+.consultation {
+  margin-top: 8rem;
+  background-color: var(--primary-color);
+  /* background-image: url('../assets/consultation_bg.png'); */
+  padding-block: 2.25rem;
+  /* border-radius: 2.75rem; */
+  }
+  
+  .consultation-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  }
+  
+  .consultation-wrapper > * {
+  flex: 1;
+  }
+  
+  .consultation-text {
+  color: white;
+  }
+  
+  .consultation-text h2 {
+  margin-bottom: 1.75rem;
+  font-size: 1.75rem;
+  font-weight: 700;
+  }
+  
+  .consultation-text span {
+  position: relative;
+  text-transform: uppercase;
+  z-index: 2;
+  }
+  
+  .consultation-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  }
+  
+  .consultation-logo img {
+  width: 190px;
+  height: 190px;
+  aspect-ratio: 1;
+  }
+  
+  .consultation-logo button {
+  background-color: var(--complementary-color);
+  text-transform: uppercase;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem 1.5rem;
+  }
+
+
+
+
+@media screen and (min-width: 640px) {
+  .header__wrapper img {
+    transform: translateY(-70%);
+  }
+
+  .our-team__item-wrapper {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .our-team__item-wrapper > * {
+    flex: 1 1 280px;
+  }
+
+  /* CONSULTATION */
+  .consultation-wrapper{
+    flex-direction: row;
+}
+}
+
+
+/* THIS MEDIA QUERY IS RESPONSIBLE ONLY IN THE IMAGE */
+
+@media screen and (min-width: 380px) {
+  .why-choose-us > img {
+    top: 20%;
+  }
+}
+@media screen and (min-width: 600px) {
+  .why-choose-us > img {
+    top: 18%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .why-choose-us > img {
+    top: 15.5%;
+  }
+  
+  .why-choose-us__reasons-items {
+    margin-top: 5.75rem;
+  }
+}
+
+/* THIS MEDIA QUERY IS RESPONSIBLE TO ALIGN THE TEAM MEMBERS */
+@media screen and (min-width: 992px) {
+  .our-team__item:nth-child(4) {
+    margin-left: 9rem;
+  }
+
+  .our-team__item:last-child {
+    margin-right: 9rem;
+  }
+}
