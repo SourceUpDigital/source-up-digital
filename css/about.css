@@ -29,12 +29,12 @@
   transform: translateY(-110%);
 }
 
-.why-choose-us {
+.why-choose-us-section {
   position: relative;
   padding-top: 5rem;
 }
 
-.why-choose-us::before {
+.why-choose-us-section::before {
   content: "";
   position: absolute;
   top: 0;
@@ -45,7 +45,7 @@
   z-index: -1;
 }
 
-.why-choose-us > img {
+.why-choose-us-section > img {
   width: min(100%, 660px);
   position: absolute;
   top: 18%;
@@ -92,6 +92,27 @@
 }
 
 .reasons-item__text h5 {
+  font-weight: 600;
+}
+
+
+/* 
+
+  ----- TEAM SECTION ------ 
+
+*/
+.team-section, .our-team {
+  margin-block: 5rem;
+}
+
+.team-section h5 {
+  text-align: center;
+  color: var(--complementary-color);
+}
+
+.our-team h2{
+  text-align: center;
+  text-transform: uppercase;
   font-weight: 600;
 }
 
