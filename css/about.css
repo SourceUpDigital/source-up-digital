@@ -48,7 +48,7 @@
 .why-choose-us > img {
   width: min(100%, 660px);
   position: absolute;
-  top: 20%;
+  top: 18%;
   right: 0;
   z-index: 1;
 }
@@ -104,6 +104,14 @@
   }
 }
 
+
+/* THIS MEDIA QUERY IS RESPONSIBLE ONLY IN THE IMAGE */
+
+@media screen and (min-width: 380px) {
+  .why-choose-us > img {
+    top: 20%;
+  }
+}
 @media screen and (min-width: 600px) {
   .why-choose-us > img {
     top: 18%;
