@@ -308,110 +308,21 @@
 }
 
 
-/* 
-
------ FOOTER -----
-
-*/
-
-footer {
-  margin-top: 5rem;
-  padding: 1rem;
-}
-
-footer h4 {
-  font-weight: 500;
-  margin-bottom: 2rem;
-}
-
-.footer-content {
-  border-bottom: 1px solid var(--primary-color);
-  padding-bottom: 2rem;
-
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.footer-content__column > ul {
-  color: var(--grayish-color);
-  display: flex;
-  flex-direction: column;
-  gap: .75rem;
-}
-
-.footer-content__column > ul li {
-  font-weight: 600;
-}
-
-.footer-content__column:last-child ul li a{
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 1rem;
-}
-
-.footer-content__column:last-child ul li a img {
-  width: 18px;
-}
-
-.footer-socials {
-  padding-top: 1rem;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.footer-socials p {
-  display: flex;
-  gap: .75rem;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer-socials__copyright span {
-  color: var(--primary-color);
-  font-size: 1.25rem;
-  font-weight: 600;
-}
-
-.footer-socials__icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-}
-
-
 @media screen and (min-width: 640px) {
   /* CONSULTATION */
   .consultation-wrapper{
       flex-direction: row;
   }
-
+  
   /* BLOGPOST */
   .blogpost-cards {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-
+  
   }
-
-  /* FOOTER */
-  .footer-content {
-      flex-direction: row;
-  }
-
-  .footer-content > * {
-      flex: 1;
-  }
-
-  .footer-socials {
-      flex-direction: row;
-
-  }
+  
+  
 }
 
 @media screen and (min-width: 768px) {
