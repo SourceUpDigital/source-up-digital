@@ -1,0 +1,36 @@
+.header {
+  background-color: #f2f2f2;
+  min-height: 60vh;
+
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+}
+
+.header__wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__wrapper h1 {
+  padding-bottom: 1rem;
+  align-self: flex-end;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.header__wrapper img {
+  width: min(100%, 550px);
+  position: absolute;
+  top: 0;
+  right: -2rem;
+  transform: translateY(-110%);
+}
+
+@media screen and (min-width: 640px) {
+  .header__wrapper img {
+    transform: translateY(-70%);
+  }
+}
